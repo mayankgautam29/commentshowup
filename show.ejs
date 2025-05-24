@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show comment</title>
+</head>
+<body>
+    <h1>Comment Details</h1>
+    <h2>
+        <strong>User ID: </strong><%=foundComment.mid%>
+        <br>
+        <strong>Username: </strong><%=foundComment.username%>
+        <br>
+        <strong>Username: </strong><%=foundComment.comment%>
+    </h2>
+    <form method="post" action="/comments/<%=foundComment.mid%>?_method=DELETE">
+        <button>Delete this comment</button>
+    </form>
+</body>
+</html>
